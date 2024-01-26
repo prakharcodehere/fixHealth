@@ -1,0 +1,65 @@
+.bookingForm {
+ position: fixed;
+    padding: 20px;
+  height: 60vh;
+  width: 40vw;
+  z-index: 700;
+  top: 20%;
+  right: 50%;
+   
+    backdrop-filter: blur(20px) saturate(98%);
+    -webkit-backdrop-filter: blur(20px) saturate(98%);
+    background-color: rgba(0, 0, 0, 0.45);
+   
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border-bottom-left-radius: 40px;
+  
+  }
+  
+
+  .bookingForm label {
+    color: var(--color-ivory);
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+
+  .bookingForm input,
+  .bookingForm textarea,
+  .bookingForm select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .bookingForm button {
+    background-color: var(--color-mist);
+    color: var(--color-black);
+    
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+  .bookingForm .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    color: var(--color-ivory);
+  }
+
+
+  .complaintsInput{
+    height: 50%;
+    width: 80%;
+  }
+  
+

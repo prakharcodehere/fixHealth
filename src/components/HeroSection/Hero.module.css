@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+
+
+
+
+
+
+.heroWrapper{
+    margin-top: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 600px;
+    overflow: hidden;
+}
+
+.heroHeading{
+  margin-left: 5vw;
+  margin-top: 60px;
+  font-family: 'Jost', sans-serif;
+    margin-top: 30%;
+    color: var(--color-ivory);
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.startDecor{
+    height: 4rem;
+    font-family:sans-serif;
+    font-weight: 800;
+    line-height: 6rem;
+}
+
+.startDecor:hover{
+    color: rgb(0, 0, 0);
+	
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+
+.bannerImg{
+    width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+.textWrapper{
+    position: absolute;
+  top: 20%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; 
+}
+/* .startDecor:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #cccccc;
+  }
+  
+.startDecor:hover {
+    color: #ffffff;
+    
+    text-shadow: 0 0 5px #ffee10;
+  } */
+
+
+ 
+
+
+
+
+.imgWrapper{
+height: auto;
+}
+
+/* .docImg{
+    height: 90vh;
+    width: auto;
+    filter: drop-shadow(black 1rem 0.7rem 10px);
+} */
