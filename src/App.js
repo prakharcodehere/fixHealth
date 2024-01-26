@@ -21,6 +21,7 @@ function App() {
   const [patients, setPatients] = useState([]);
   const [isFilteredDoctorsModalOpen, setIsFilteredDoctorsModalOpen] = useState(false);
   const [step, setStep] = useState(1);
+  const [doctorsData, setDoctorsData] = useState([])
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -30,6 +31,36 @@ function App() {
     complaints: '',
     experience: 'no',
   });
+
+  const config = {
+    endpoint: `https://fixhealth-rmjx.onrender.com`,
+  };
+
+  const performAPICall = async () => {
+ 
+    try {
+      const response = await axios.get(`${config.endpoint}/doctors`);
+      // const { data } = response;
+
+      setDoctorsData(response.data);
+    
+      // console.log(data);
+    
+      // return response.data;
+    } catch (error) {
+      console.log("Error fetching doctor data");
+     
+    }
+    
+  };
+
+ 
+
+
+
+
+
+
   
   
   const handleFormSubmit = (formData) => {
@@ -76,7 +107,7 @@ const handleCloseFilteredModal =() =>{
  
  
    
-      const doctorsInCity = doctorDatabase.filter(
+      const doctorsInCity = doctorsData.filter(
         (doctor) => doctor.city.toLowerCase() === formData.city.toLowerCase()
       );
  
@@ -114,6 +145,11 @@ console.log(filteredDoctors)
 
   useEffect(() => {
     setStep(1);
+  }, []);
+
+
+  useEffect(() => {
+    performAPICall();
   }, []);
 
   
