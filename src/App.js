@@ -1,6 +1,6 @@
 
 import { useState,useEffect} from 'react';
-import doctorDatabase from "./Data/doctorDatabase"
+
 import BookingForm from './components/BookingForm/BookingForm';
 import Hero from './components/HeroSection/Hero';
 import Navbar from "./components/Navbar/Navbar"

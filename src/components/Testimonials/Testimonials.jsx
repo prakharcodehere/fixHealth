@@ -19,7 +19,7 @@ const Testimonials = () => {
           className={`${styles.testimonial} ${hoveredIndex === index ? styles.hovered : ''}`}
           
         >
-          <img src={Pin} alt="Pin" className={styles.pinImgs}/>
+          <img src={Pin} alt="Pin" className={styles.pinImgs} loading="eager"/>
           <p className={styles.content}>{testimonial.content}</p>
           <div className={styles.authorDescription}>
           <img src={testimonial.image} alt="authorImg" className={styles.testimonialImg}/>
