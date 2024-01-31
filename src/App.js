@@ -39,12 +39,12 @@ function App() {
   const performAPICall = async () => {
  
     try {
-      const response = await axios.get(`${config.endpoint}/doctors`);
+      const response = await axios.get("https://fixhealth-rmjx.onrender.com/doctors");
       // const { data } = response;
 
       setDoctorsData(response.data);
     
-      // console.log(data);
+      console.log("api call made",response.data);
     
       // return response.data;
     } catch (error) {
